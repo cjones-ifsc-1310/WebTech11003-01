@@ -1,0 +1,21 @@
+/*--------------BOX SIZING------------*/
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+/*-------------------GLOBAL STYLES------------*/
+body {
+background-color: #ffffff;
+font-family: "Outfit", sans-serif;
+}
+/*---------------HEADER-BANNER--------------*/
+header.primary{
+background:rgba(255, 0, 225, 0.858);
+color: #f0f0f0;
+text-align:center
+}
