@@ -10,12 +10,29 @@ html {
 
 /*-------------------GLOBAL STYLES------------*/
 body {
-background-color: #ffffff;
+background-color: #A27EB6;
 font-family: "Outfit", sans-serif;
+
 }
 /*---------------HEADER-BANNER--------------*/
 header.primary{
-background:rgba(255, 0, 225, 0.858);
-color: #f0f0f0;
-text-align:center
+background:#4b2361;
+color: #829d21;
+text-align:center;
+text-shadow: 1px 1px #000000;
+padding: 20px;
 }
+/*-------------Header-1-----------------------*/
+header.primary h1{font-size:2.4rem;
+}
+header.primary a{ color:#A27EB6;
+text-decoration:none;}
+header.primary h2{text-align:center; font-size:2rem; letter-spacing:.3px; margin:0; color:#267c81;
+}
+header.primary nav{text-align:right; font-size:1.2rem;}
+header.primary nav ul{display:flex; flex-direction:row; justify-content:space-around;}
+header.primary nav li{list-style-type:none;}
+header.primary nav a{
+  color: #A27EB6; background-color:#235E61; padding:5px 7.5px; border-radius:20px; border:1px solid #A27EB6; transition:0.1s;
+}
+header.primary nav a:hover{background-color:#4b2361d2}
