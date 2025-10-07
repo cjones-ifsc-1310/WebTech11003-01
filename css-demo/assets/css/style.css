@@ -8,12 +8,29 @@ html {
   box-sizing: inherit;
 }
 
+
+/*----------------------------UTILITY CLASSES-----------------*/
+
+.container{ 
+  width: 80vw;
+  max-width:960px;
+  margin: 40px auto;
+  }
+/*----------------------------Responsive Images-----------------*/
+img {max-width:100%;
+}
+
+
+
+
+
+
 /*-------------------GLOBAL STYLES------------*/
 body {
 background-color: #A27EB6;
 font-family: "Outfit", sans-serif;
-
 }
+
 /*---------------HEADER-BANNER--------------*/
 header.primary{
 background:#4b2361;
@@ -30,9 +47,76 @@ text-decoration:none;}
 header.primary h2{text-align:center; font-size:2rem; letter-spacing:.3px; margin:0; color:#267c81;
 }
 header.primary nav{text-align:right; font-size:1.2rem;}
-header.primary nav ul{display:flex; flex-direction:row; justify-content:space-around;}
+header.primary nav ul{display:flex; flex-direction:row; justify-content:space-around;
+max-width: 960px;
+margin: auto;
+padding: 40px;
+
+}
+
 header.primary nav li{list-style-type:none;}
 header.primary nav a{
   color: #A27EB6; background-color:#235E61; padding:5px 7.5px; border-radius:20px; border:1px solid #A27EB6; transition:0.1s;
 }
-header.primary nav a:hover{background-color:#4b2361d2}
+header.primary nav a:hover{background-color:#4b2361d2;}
+
+#intro h2{color:#ffffff;
+border-bottom: 1px dotted #267c81;
+}
+
+#content {
+display:flex;
+flex-direction:row;
+justify-content:space-around;
+gap:20px;
+
+}
+
+#content .post{
+ box-shadow: 0 4px 8px rgba(91, 4, 141, 0.863);  
+ padding:10px;
+ font-size:.8rem;
+}
+
+figure {margin:0}
+
+
+#content time, figcaption{
+  text-transform:uppercase;
+  font-size:.6rem;
+
+}
+
+#content a{color:#235E61;}
+
+
+
+
+
+
+
+
+
+
+
+
+/*--------------------------Media Queries----------------------------*/
+
+@media screen and (max-width:500px){
+
+
+header.primary nav ul{
+  flex-direction:column;
+  gap:20px;
+  }
+
+header.primary nav a {
+
+  display:block;
+
+}
+
+
+}
+
+}
