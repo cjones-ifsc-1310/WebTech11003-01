@@ -22,9 +22,6 @@ img {max-width:100%;
 
 
 
-
-
-
 /*-------------------GLOBAL STYLES------------*/
 body {
 background-color: #A27EB6;
@@ -90,7 +87,11 @@ figure {margin:0}
 #content a{color:#235E61;}
 
 
-
+aside[role="complementary"]{
+  background-color: #4b2361;
+  color;#ffffff
+  padding:40px;
+}
 
 
 
