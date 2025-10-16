@@ -153,6 +153,38 @@ list-style-type: lower-roman;
   color:#235E61;
 }
 
+#practice dt{
+font-weight:900;
+}
+
+#practice dt{
+  background: #235E61;
+  color:#A27EB6;
+  margin-top:20px;
+}
+
+#practice dd{
+  margin:0%;
+  padding:10px 0px 10px 0px; 
+}
+#practice blockquote{
+  border: 4px double #A27EB6;
+  padding:20px 40px;
+  margin:40px 80px;
+  border-radius:30px 0;
+  background-color:#4b2361;
+  color:#ffffff;
+  text-shadow:2px 2px #A27EB6;
+}
+#practice blockquote cite{
+  display:block;
+  font-size: .8rem;
+  text-align:right;
+  margin-top:20px;
+}
+
+
+
 caption{
 
   font-weight:bold;
