@@ -16,6 +16,31 @@ html {
   max-width:960px;
   margin: 40px auto;
   }
+
+  .img-right{
+float:right;
+border: 10px solid #267c81; padding:5px 5px 5px 5px;
+border-radius:5px;
+margin:10px 0 10px 20px;
+
+  }
+
+  .img-left{
+float:left;
+border: 10px solid #267c81; padding:5px 5px 5px 5px;
+border-radius:5px;
+margin:10px 20px 10px 0px;
+
+  }
+
+  .img-center{
+
+    display:block;
+    margin: 10px auto;
+    border: 10px solid #267c81; padding:5px 5px 5px 5px;
+border-radius:5px;
+
+  }
 /*----------------------------Responsive Images-----------------*/
 img {max-width:100%;
 }
@@ -87,6 +112,71 @@ figure {margin:0}
 
 #content a{color:#235E61;}
 
+#practice h2 {
+color:#4b2361; border-bottom:1px dotted #267c81; 
+}
+
+#practice a:link, #practice a:visited {
+color:#829d21;
+
+
+}
+
+
+
+#practice h3{
+
+  border-left:7.5px solid #4b2361;
+  padding-left:7.5px;
+
+}
+
+table {
+  width:100%;
+  border:1px solid #4b2361;
+  border-collapse:collapse;
+}
+
+td:nth-child(2), td:nth-child(3){
+  text-align:right;
+}
+
+tr:hover{
+  background-color: #267c8153;
+}
+
+#practice ol{
+list-style-type: lower-roman;
+}
+
+#practice ul ul{
+  color:#235E61;
+}
+
+caption{
+
+  font-weight:bold;
+  margin:10px;
+  font-size:1.3rem;
+
+}
+tr:nth-child(even){
+  background-color: rgba(93, 8, 102, 0.279);
+}
+
+
+
+th{
+    background-color:#235E61;
+color:#4b2361; 
+padding: 7.5px;
+
+font-weight:bold;
+}
+td{
+  border:1px solid #4b2361;
+  padding:5px;
+}
 
 aside[role="complementary"]{
   background-color:#4b2361;
