@@ -37,10 +37,6 @@ a{
     color:#D98471;
 }
 
-header.primary h2{
-  color:#E6C363;
-  text-shadow: 1.5px 1.5px #E6C363;
-}
     h2{ 
         color:#BF4949;
         text-shadow: 2px 2px #D98471;
@@ -131,21 +127,32 @@ gap:20px;
 
 #content .post{
   background-color: #4B8CA6;
-    border:3px dashed #E6C363;
+    border:3px dashed #BF4949;
 border-right:10px solid #E6C363;
 border-bottom: none;
 border-radius:20px 0;
 padding:10px 10px 10px 10px;
 font-size: 1rem;
- box-shadow: 0 8px 16px #BF4949;  
+text-align:center;
+ box-shadow: 0 16px 28px #BF4949;  
  padding:10px;
- font-size:.8rem;
- color:#E6C363
+ font-size:1rem;
+ color:#E6C363;
+}
+
+#content a{
+  font-size:1.5rem;
+color:#D98471;
+text-shadow:2px 2px #E6C363;
+
 }
 
 figure {margin:0}
 
+#content figure{
+  position: center;
 
+}
 #content figcaption{
   text-transform:uppercase;
   font-size:.6rem;
@@ -171,11 +178,13 @@ padding:10px;
 }
 
 img {
-  border: 3px solid #BF4949;
+  border: 2px dashed #BF4949;
   border-radius: 4px;
-  padding: 3px;
+  padding: 2px;
   width: 100px;
 }
+
+
 
 .column {
   float: left;
@@ -183,7 +192,6 @@ img {
   padding: 10px;
 }
 
-/* Clear floats after the columns */
 .row:after {
   content: "";
   display: table;
@@ -218,19 +226,6 @@ img {
   display: block;
   width: 100%;
   height: auto;
-}
-
-.overlay {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  height: 100%;
-  width: 100%;
-  opacity: 0;
-  transition: .5s ease;
-  background-color: #D99D55;
 }
 
 
