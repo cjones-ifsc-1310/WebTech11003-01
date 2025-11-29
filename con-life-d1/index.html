@@ -5,30 +5,278 @@
 <meta charset="utf-8">
   <meta name="description" content="Describes why and how a person could work for comic conventions">
   <meta name="author" content="Chrissy Jones">
-  <a href="assets/css/style.css" rel="stylesheet"></a>
+  <link href="assets/css/style.css" rel="stylesheet"></a>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">
+<style>
+.container {
+  position: relative;
+  width: 90%;
+}
+
+.image {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+.middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.container:hover .image {
+  opacity: 0.3;
+}
+
+.container:hover .middle {
+  opacity: 1;
+}
+
+.text {
+  background-color: #04AA6D;
+  color: white;
+  font-size: 16px;
+  padding: 16px 32px;
+}
+</style>
 </head>
 <body>
 <main>
 <header role="banner" class="primary">
-<h1>Con-Life:</h1>
-<h2>The Why, Where, & How!</h2>
+  <div class="hgroup">
+<h1><a href="index.html">The Con Life:</a></h1>
+<h2>The Why, When, Where, & How!</h2>
+</div>
 <nav role="navigation" class="primary">
       <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="why.html">Why</a></li>
-        <li><a href="where.html">Where & How</a></li>
+        <li><a href="index.html">Why</a></li>
+        <li><a href="when.html">When & Where</a></li>
+        <li><a href="how.html">How</a></li>
         <li><a href="contact.html">Contact</a></li>    
       </ul>
     </nav>
 </header>
 
+<section id="intro" class="container">
+    <h2>First Things First—What is the Con-life?</h2>
+    <p>Integer pretium fringilla mauris, sed cursus purus consectetur eu. Donec vitae placerat enim. Nam dictum purus nec diam pharetra, in accumsan ipsum commodo. In varius ligula posuere, sodales erat nec, tempus purus. Quisque eu posuere arcu, ut pellentesque
+      dui. Nam pretium, leo et sollicitudin mollis, sapien mi ultricies tortor, in placerat lectus odio a nisl. Suspendisse feugiat magna id mollis auctor. Nullam neque sem, hendrerit vitae metus at, vestibulum aliquet metus. Quisque dapibus ultrices
+      pulvinar. Aliquam condimentum sapien lorem, in egestas ipsum rhoncus sed. Vivamus congue et eros in cursus. Donec elementum quam sit amet feugiat volutpat. Vestibulum varius laoreet turpis id efficitur. Proin scelerisque volutpat lectus, at fermentum
+      dui euismod sed. In efficitur felis risus, at tempor risus aliquam vel.</p>
+  </section>
 
+ <section id="content" class="container">
+    <article class="post">
+      <header>
+        <h3>Pop Culture!</h3>
+        <figure>
+          <img src="assets/css/img/pop.png" alt="Pop">
+          <figcaption>Pop Culture Conventions</figcaption>
+        </figure>
+        <h3> <a href="https://fancons.com/events/schedule.php?year=2026&loc=us" target="_blank" rel="popcons" title="popcons">Pop Culture Cons</a></h3>
+      </header>
+      <p>Curabitur facilisis pharetra ultrices. Phasellus eu elementum felis. Etiam cursus mi vitae odio imperdiet, vel fringilla orci porttitor. Cras at tincidunt metus, in lobortis ligula. Fusce metus nisl, efficitur id fringilla quis, luctus non nisi.
+        </p>
+      <footer class="post-meta"><h4>Click the link for upcoming shows!</h4></footer>
+    </article>
+    <article class="post">
+      <header>
+       <h3>Living that Horror Life?</h3>
+        <figure>
+          <img src="assets/css/img/horror.png" alt="horror">
+          <figcaption>Horror Conventions</figcaption>
+        </figure>
+        <h3> <a href="https://horrorcons.com/calendar/" target="_blank" rel="horror-cons" title="horror cons">Horror Cons</a></h3>
+      </header>
+      <p>Curabitur facilisis pharetra ultrices. Phasellus eu elementum felis. Etiam cursus mi vitae odio imperdiet, vel fringilla orci porttitor. Cras at tincidunt metus, in lobortis ligula. Fusce metus nisl, efficitur id fringilla quis, luctus non nisi.
+        </p>
+      <footer class="post-meta"><h4>Click the link for upcoming shows!</h4></footer>
+    </article>
+    <article class="post">
+      <header>
+       <h3>There's a Con for that, too!</h3>
+        <figure>
+          <img src="assets/css/img/anime.png" alt="animecons">
+          <figcaption>Anime Conventions</figcaption>
+        </figure>
+        <h2> <a href="https://animecons.com/events/schedule.php?year=2026&loc=us" target="_blank" rel="anime" title="anime">Anime Cons</a></h2>
+      </header>
+      <p>Curabitur facilisis pharetra ultrices. Phasellus eu elementum felis. Etiam cursus mi vitae odio imperdiet, vel fringilla orci porttitor. Cras at tincidunt metus, in lobortis ligula. Fusce metus nisl, efficitur id fringilla quis, luctus non nisi.</p>
+      <footer class="post-meta"><h4>Click the link for upcoming shows!</h4></footer>
+    </article>
+  </section>
+   <section id="markup"class="container">
+  <h2>Properly Marking up an HTML Document</h2>
+  
+
+  <p> <a href="#">Quisque feugiat arcu eget sapien</a>. <span class="foo">Aenean</span> eget ipsum id arcu bibendum porttitor. Vivamus id lectus non eros eleifend aliquet.</p>
+  Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Mauris volutpat. Integer dignissim consequat enim. Praesent velit felis,
+    tempus malesuada, sagittis et, condimentum in, ante. Nulla lobortis, ligula sit amet laoreet sollicitudin, sem arcu lacinia tellus, id lobortis arcu urna tincidunt turpis. <sup><a href="#">1</a></sup> </p>
+
+ <h3>This is a Subsection of Subsection I</h3>
+
+  <blockquote>This is a Quote. Content precedes design. Design in the absence of content is not design, it's decoration. <cite>From Designing with Web Standards by Jeffery Zeldman.</cite></blockquote>
+
+  <h3>This is a Subsection of the Primary Content</h3>
+
+
+  <p>This is a paragraph. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Praesent volutpat velit sed massa. In volutpat eros sagittis ipsum. Donec fringilla risus nec nunc. Fusce tellus arcu, blandit quis, posuere in, porta vitae, lorem. Quisque
+    feugiat arcu eget sapien. Aenean eget ipsum id arcu bibendum porttitor. Vivamus id lectus non eros eleifend aliquet. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Mauris volutpat. Integer dignissim consequat
+    enim. Praesent velit felis, tempus malesuada, sagittis et, condimentum in, ante. Nulla lobortis, ligula sit amet laoreet sollicitudin, sem arcu lacinia tellus, id lobortis arcu urna tincidunt turpis. Proin adipiscing ultrices dui. Duis porttitor,
+    libero ut eleifend pellentesque, risus turpis fermentum est, vel nonummy lorem est id nisl. Nulla facilisi. In sagittis tortor. Vestibulum dictum leo vitae augue. Morbi in odio sed nulla luctus sodales.</p>
+</section>
+  <aside role="complementary">
+    <div class="container">
+      <article class="widget">
+        <header>
+          <h3>Meet Your Heroes!</h3>
+        </header>
+       
+        <p>Quisque justo erat, varius placerat fermentum vel, iaculis vel ligula. Phasellus et elit purus. Curabitur ipsum enim, scelerisque vitae condimentum ac, cursus eget quam. Nullam volutpat dui ut risus pulvinar at fringilla sem tristique. Nulla facilisi.
+          Donec posuere euismod purus, eu scelerisque risus pellentesque eu. Vestibulum sed tincidunt metus. <a href="#">Read More &raquo;</a></p>
+
+<div class="row">
+  <div class="column">
+  <div class="myDIV"><img src="assets/css/img/billy.png" alt="Billy West, Voice Actor"></div>
+  <div class="hide">Voice Actor for Ren & Stimpy, Doug, Red M&M, Fry, Zapp & Farnsworth of Futurama, etc.</div></div>
+  <div class="column">
+    <div class="myDIV"><img src="assets/css/img/ethan.png" alt="Ethan Embry, Actor"></div>
+    <div class="hide">Can't Hardly Wait, Sweet Home Alabama, Empire Records, etc.</div>
+  </div>
+  <div class="column">
+    <div class="myDIV"><img src="assets/css/img/juliette.png" alt="Juliette Lewis, Actress"></div>
+  <div class="hide">Yellowjackets, Natural Born Killers, National Lampoon's Christmas Vacation, The Other Sister, etc.</div></div>
+
+<div class="row">
+     <div class="column">
+      <div class="myDIV"><img src="assets/css/img/steve.png" alt="Steve Burns, Blues Clues"></div>
+  <div class="hide">Steve of Blues Clues</div></div>
+  <div class="column">
+    <div class="myDIV"><img src="assets/css/img/tmnt.png" alt="O.G. Teenage Mutant Ninja Turtle Voice Actors"></div>
+  <div class="hide">Original Voice Actors for the Teenage Mutant Ninja Turtles</div></div>
+    <div class="column">
+       <div class="myDIV"><img src="assets/css/img/Trublood.png" alt="Stephen Moyer & Kristin Bauer, True Blood"></div>
+  <div class="hide">(Vampire Bill) & (Vampaire Pam), True Blood</div></div>
+</div> 
+
+  <div class="row">
+   <div class="column"> 
+    <div class="myDIV"><img src="assets/css/img/mira.png" alt="Mira Sorvino, Oscar Winning Actress"></div>
+    <div class="hide">Romy & Michelle's High School Reunion, Mimic, Mighty Aphrodite (Oscar Winner)</div></div>
+  <div class="column">
+    <div class="myDIV"><img src="assets/css/img/Randyc.png" alt="Randy Quaid, Actor"></div>
+    <div class="hide">National Lampoon's Vacation Movies, Days of Thunder, Kingpin, Independence Day, etc.</div>
+  </div>
+  <div class="column">
+    <div class="myDIV"><img src="assets/css/img/Melissa.png" alt="Melissa Joan Hart, Actress"></div>
+    <div class="hide">Clarissa Explains it All, Sabrina the Teenage Witch</div></div>
+    </div>
+
+
+<div class="row">
+   <div class="column"> 
+    <div class="myDIV"><img src="assets/css/img/theo.png" alt="Theo Rossi, Actor"></div>
+    <div class="hide">Juice, Sons of Anarchy</div></div>
+  <div class="column">
+    <div class="myDIV"><img src="assets/css/img/vicki.png" alt="Vicki Lawrence, Actress"></div>
+    <div class="hide">Mama, Mama's Family, The Carol Burnett Show, Comedian</div></div>
+  <div class="column">
+    <div class="myDIV"><img src="assets/css/img/twilight.png" alt="Twilight, Various Actors"></div>
+    <div class="hide">Emmett, Jasper, Alice, & Carlisle Cullen, etc., Twilight</div></div>
+      </div>
+
+
+  <div class="row">
+   <div class="column">
+    <div class="myDIV"><img src="assets/css/img/Lou.png" alt="Lou Diamond Phillips, Actor"></div>
+    <div class="hide">La Bamba, Young Guns, Young Guns II, Courage Under Fire</div></div>
+      <div class="column">
+        <div class="myDIV"><img src="assets/css/img/Priscilla.png" alt="Priscilla Presley, Actress"></div>
+    <div class="hide">Naked Gun Movies, Wife of Elvis Presley</div></div>
+  <div class="column">
+    <div class="myDIV"><img src="assets/css/img/william.png" alt="William Zabka, Actor"></div>
+    <div class="hide">Johnny Lawrence, The Karate Kid Movies, Cobra Kai</div></div>
+        <footer>Widget Footer</footer>
+      </article>
+      
+      
+      
+      <article class="widget">
+        
+        <header>
+          <h3>Achieve Your Travel Bucketlist!</h3>
+        </header>
+        
+        <p>Quisque justo erat, varius placerat fermentum vel, iaculis vel ligula. Phasellus et elit purus. Curabitur ipsum enim, scelerisque vitae condimentum ac, cursus eget quam. Nullam volutpat dui ut risus pulvinar at fringilla sem tristique. Nulla facilisi.
+          Donec posuere euismod purus, eu scelerisque risus pellentesque eu. Vestibulum sed tincidunt metus. <a href="#">Read More &raquo;</a></p>
+        
+
+  <div class="row">
+   <div class="column">
+    <div class="myDIV"><img src="assets/css/img/Cheyenne.png" alt="Cheyenne, Wyoming"></div>
+    <div class="hide">Cheyenne, Wyoming 2024; Anime 307 Comic Con</div></div>
+      <div class="column">
+        <div class="myDIV"><img src="assets/css/img/milwaukee.png" alt="Milwaukee 2024"></div>
+    <div class="hide">Milwaukee, Wisconsin, August 9, 2024, Anime Milwaukee Comic Con</div></div>
+  <div class="column">
+    <div class="myDIV"><img src="assets/css/img/okc.png" alt="Oklahoma City, Oklahoma"></div>
+    <div class="hide">Oklahoma City, Oklahoma, May 2025; Galaxy Con OKC</div></div></div>
+
+    <div class="row">
+   <div class="column">
+    <div class="myDIV"><img src="assets/css/img/Atlanta 23.png" alt="Atlanta 2023"></div>
+    <div class="hide">Atlanta, February 2023; Days of the Dead Horror Con</div></div>
+      <div class="column">
+        <div class="myDIV"><img src="assets/css/img/Atlanata 25.png" alt="Atlanta 2025"></div>
+    <div class="hide">Atlanta. July 2025; Atlanta Pop Culture Con </div></div>
+  <div class="column">
+    <div class="myDIV"><img src="assets/css/img/tulsa (1).png" alt="Tulsa 2025"></div>
+    <div class="hide">Tulsa Oklahoma, August 9, 2025; Oklahoma Comic Con</div></div></div>
+        
+    <div class="row">
+   <div class="column">
+    <div class="myDIV"><img src="assets/css/img/Dallas.png" alt="Dallas, Texas"></div>
+    <div class="hide">Dallas, Texas; Fan Expo Dallas Comic Con</div></div>
+      <div class="column">
+        <div class="myDIV"><img src="assets/css/img/Philly22.png" alt="Philadelphia 2022"></div>
+    <div class="hide">Philadelphia, Pennsylvania; Fan Expo Philly Comic Con</div></div>
+  <div class="column">
+    <div class="myDIV"><img src="assets/css/img/NYC15.png" alt="New York City 2015"></div>
+    <div class="hide">Rockefellar Center, NYC 2015, Walker Stalker Comic Con New Jersey</div></div></div>
+
+
+    <div class="row">
+   <div class="column">
+    <div class="myDIV"><img src="assets/css/img/NOLA.png" alt="New Orleans, Louisiana"></div>
+    <div class="hide">New Orleans, Louisana; Fan Expo NOLA Comic Con</div></div>
+      <div class="column">
+        <div class="myDIV"><img src="assets/css/img/SanA.png" alt="San Antonio, Texas"></div>
+    <div class="hide">The Alamo, San Antonio, Texas; Big Texas Comic Con</div></div>
+  <div class="column">
+    <div class="myDIV"><img src="assets/css/img/Providence 25.png" alt="Providence, Rhode Island 2025"></div>
+    <div class="hide">Providence, Rhode Island; 2025</div></div></div>
+        
+          <footer>Widget Footer</footer>
+      </article>
+    </div>
+  </aside>
+<footer id="colophon" role="contentinfo">
+    <h6>&copy;2025 Chrissy Jones</h6>
+  </footer>
 
 
 </main>
-
-
-
 
 
 </body>
