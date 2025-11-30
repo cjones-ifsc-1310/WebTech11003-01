@@ -169,10 +169,8 @@ aside .container{
 
 aside[role="complementary"]{
   background-color:#55734D;
-    border:5px dashed #BF4949;
-border-left:5px dashed #BF4949;
-border-bottom:none;
-border-radius:30px 0;
+    border:10px solid #BF4949;
+border-radius:0 30px;
 padding:10px;
   color:#D99D55;
 }
@@ -228,6 +226,82 @@ img {
   height: auto;
 }
 
+.accordion-container {
+    width: 80%;
+    margin: 50px auto;
+    background-color: #4B8CA6;
+    border-left:3px dashed #BF4949;
+border-right:10px solid #D98471;
+border-radius:20px 0;
+padding:10px 10px 10px 10px;
+font-size: 1rem;
+text-align:center;
+}
+
+.accordion-item {
+    border-bottom: 3px solid #D98471;
+}
+
+.accordion-item:last-child {
+    border-bottom: none;
+}
+
+.accordion-header {
+    display: block;
+    border:3px dashed #BF4949;
+border-right:3px dashed #D98471;
+border-bottom: 3px dashed #D98471;
+border-radius:20px 0;
+padding:10px 10px 10px 10px;
+font-size: 1rem;
+text-align:center;
+       background-color: #E6C363;
+    cursor: pointer;
+    font-weight: bold;
+    color: #55734D;
+    transition: background-color 0.3s ease-out;
+}
+
+.accordion-header:hover {
+    background-color: #e6c363ce;
+}
+
+.accordion-content {
+    padding: 0 20px;
+    color:#E6C363;
+    background-color: #4B8CA6;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-out;
+}
+
+.accordion-toggle:checked + .accordion-header + .accordion-content {
+    max-height: 200px; /* Adjust as needed for your content */
+    padding: 15px 20px;
+}
+
+.accordion-header::after {
+    content: '+';
+    float: right;
+    transition: transform 0.3s ease;
+}
+
+.accordion-toggle:checked + .accordion-header::after {
+    content: '-';
+    transform: rotate(90deg); 
+}
+
+div.accordion h3 {
+  text-align: center;
+  font-size: 1.5rem;
+  background-color:#4B8CA6;
+  color:#E6C363;
+  border:5px solid #D98471;
+  border-radius:0 30px;
+  width:50%;
+
+  
+}
 
 
 #colophon{

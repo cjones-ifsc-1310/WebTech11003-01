@@ -14,42 +14,10 @@
   position: relative;
   width: 90%;
 }
-
-.image {
-  opacity: 1;
-  display: block;
-  width: 100%;
-  height: auto;
-  transition: .5s ease;
-  backface-visibility: hidden;
-}
-
-.middle {
-  transition: .5s ease;
-  opacity: 0;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  text-align: center;
-}
-
-.container:hover .image {
-  opacity: 0.3;
-}
-
-.container:hover .middle {
-  opacity: 1;
-}
-
-.text {
-  background-color: #04AA6D;
-  color: white;
-  font-size: 16px;
-  padding: 16px 32px;
-}
 </style>
+
+
+
 </head>
 <body>
 <main>
@@ -60,7 +28,7 @@
 </div>
 <nav role="navigation" class="primary">
       <ul>
-        <li><a href="index.html">Why</a></li>
+        <li><a href="index.html">What & Why</a></li>
         <li><a href="when.html">When & Where</a></li>
         <li><a href="how.html">How</a></li>
         <li><a href="contact.html">Contact</a></li>    
@@ -75,51 +43,75 @@
       pulvinar. Aliquam condimentum sapien lorem, in egestas ipsum rhoncus sed. Vivamus congue et eros in cursus. Donec elementum quam sit amet feugiat volutpat. Vestibulum varius laoreet turpis id efficitur. Proin scelerisque volutpat lectus, at fermentum
       dui euismod sed. In efficitur felis risus, at tempor risus aliquam vel.</p>
   </section>
+  <section id="accordion" class="container">
+    <div class="accordion">
+<h3>Common Convention Positions</h3>
+<div class="accordion-container">
+        <div class="accordion-item">
+            <input type="radio" name="accordion-group" id="accordion1" class="accordion-toggle" hidden>
+            <label for="accordion1" class="accordion-header">Line Control</label>
+            <div class="accordion-content">
+                <p>Integer pretium fringilla mauris, sed cursus purus consectetur eu. Donec vitae placerat enim. Nam dictum purus nec diam pharetra, in accumsan ipsum commodo. In varius ligula posuere, sodales erat nec, tempus purus. Quisque eu posuere arcu, ut pellentesque
+      dui. Nam pretium, leo et sollicitudin mollis, sapien mi ultricies tortor, in placerat lectus odio a nisl. Suspendisse feugiat magna id mollis auctor. Nullam neque sem, hendrerit vitae metus at, vestibulum aliquet metus. Quisque dapibus ultrices
+      pulvinar. Aliquam condimentum sapien lorem, in egestas ipsum rhoncus sed. Vivamus congue et eros in cursus. Donec elementum quam sit amet feugiat volutpat. Vestibulum varius laoreet turpis id efficitur. Proin scelerisque volutpat lectus, at fermentum
+      dui euismod sed. In efficitur felis risus, at tempor risus aliquam vel.</p>
+            </div>
+        </div>
 
- <section id="content" class="container">
-    <article class="post">
-      <header>
-        <h3>Pop Culture!</h3>
-        <figure>
-                    <img src="assets/css/img/pop.png" alt-text="Pop Culture">
-          <figcaption>Pop Culture Conventions</figcaption>
-        </figure>
-        <h3> <a href="https://fancons.com/events/schedule.php?year=2026&loc=us" target="_blank" rel="popcons" title="popcons">Pop Culture Cons</a></h3>
-      </header>
-      <p>Curabitur facilisis pharetra ultrices. Phasellus eu elementum felis. Etiam cursus mi vitae odio imperdiet, vel fringilla orci porttitor. Cras at tincidunt metus, in lobortis ligula. Fusce metus nisl, efficitur id fringilla quis, luctus non nisi.
-        </p>
-      <footer class="post-meta"><h4>Click the link for upcoming shows!</h4></footer>
-    </article>
-    <article class="post">
-      <header>
-       <h3>Living that Horror Life?</h3>
-        <figure>
-          <img src="assets/css/img/horror.png" alt="horror">
-          <figcaption>Horror Conventions</figcaption>
-        </figure>
-        <h3> <a href="https://horrorcons.com/calendar/" target="_blank" rel="horror-cons" title="horror cons">Horror Cons</a></h3>
-      </header>
-      <p>Curabitur facilisis pharetra ultrices. Phasellus eu elementum felis. Etiam cursus mi vitae odio imperdiet, vel fringilla orci porttitor. Cras at tincidunt metus, in lobortis ligula. Fusce metus nisl, efficitur id fringilla quis, luctus non nisi.
-        </p>
-      <footer class="post-meta"><h4>Click the link for upcoming shows!</h4></footer>
-    </article>
-    <article class="post">
-      <header>
-       <h3>There's a Con for that, too!</h3>
-        <figure>
-          <img src="assets/css/img/anime.png" alt="animecons">
-          <figcaption>Anime Conventions</figcaption>
-        </figure>
-        <h2> <a href="https://animecons.com/events/schedule.php?year=2026&loc=us" target="_blank" rel="anime" title="anime">Anime Cons</a></h2>
-      </header>
-      <p>Curabitur facilisis pharetra ultrices. Phasellus eu elementum felis. Etiam cursus mi vitae odio imperdiet, vel fringilla orci porttitor. Cras at tincidunt metus, in lobortis ligula. Fusce metus nisl, efficitur id fringilla quis, luctus non nisi.</p>
-      <footer class="post-meta"><h4>Click the link for upcoming shows!</h4></footer>
-    </article>
+        <div class="accordion-item">
+            <input type="radio" name="accordion-group" id="accordion2" class="accordion-toggle" hidden>
+            <label for="accordion2" class="accordion-header">Handler/Celebrity Assistant</label>
+            <div class="accordion-content">
+                <p>Integer pretium fringilla mauris, sed cursus purus consectetur eu. Donec vitae placerat enim. Nam dictum purus nec diam pharetra, in accumsan ipsum commodo. In varius ligula posuere, sodales erat nec, tempus purus. Quisque eu posuere arcu, ut pellentesque
+      dui. Nam pretium, leo et sollicitudin mollis, sapien mi ultricies tortor, in placerat lectus odio a nisl. Suspendisse feugiat magna id mollis auctor. Nullam neque sem, hendrerit vitae metus at, vestibulum aliquet metus. Quisque dapibus ultrices
+      pulvinar. Aliquam condimentum sapien lorem, in egestas ipsum rhoncus sed. Vivamus congue et eros in cursus. Donec elementum quam sit amet feugiat volutpat. Vestibulum varius laoreet turpis id efficitur. Proin scelerisque volutpat lectus, at fermentum
+      dui euismod sed. In efficitur felis risus, at tempor risus aliquam vel.</p>
+            </div>
+        </div>
+
+        <div class="accordion-item">
+            <input type="radio" name="accordion-group" id="accordion3" class="accordion-toggle" hidden>
+            <label for="accordion3" class="accordion-header">Panel Team</label>
+            <div class="accordion-content">
+                <p>Content for accordion section 3.</p>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <input type="radio" name="accordion-group" id="accordion4" class="accordion-toggle" hidden>
+            <label for="accordion4" class="accordion-header">Registration</label>
+            <div class="accordion-content">
+                <p>Content for accordion section 4.</p>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <input type="radio" name="accordion-group" id="accordion5" class="accordion-toggle" hidden>
+            <label for="accordion5" class="accordion-header">Celebrity Escort/Security</label>
+            <div class="accordion-content">
+                <p>Content for accordion section 5.</p>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <input type="radio" name="accordion-group" id="accordion6" class="accordion-toggle" hidden>
+            <label for="accordion6" class="accordion-header">Crowd Control/Security</label>
+            <div class="accordion-content">
+                <p>Content for accordion section 6.</p>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <input type="radio" name="accordion-group" id="accordion7" class="accordion-toggle" hidden>
+            <label for="accordion7" class="accordion-header">Relief Team</label>
+            <div class="accordion-content">
+                <p>Content for accordion section 7.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
   </section>
-   <section id="markup"class="container">
-  <h2>Properly Marking up an HTML Document</h2>
-  
 
+     <section id="why"class="container">
+  <h2>Yeah...But. What's In It For Me?</h2>
+  
   <p> <a href="#">Quisque feugiat arcu eget sapien</a>. <span class="foo">Aenean</span> eget ipsum id arcu bibendum porttitor. Vivamus id lectus non eros eleifend aliquet.</p>
   Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Mauris volutpat. Integer dignissim consequat enim. Praesent velit felis,
     tempus malesuada, sagittis et, condimentum in, ante. Nulla lobortis, ligula sit amet laoreet sollicitudin, sem arcu lacinia tellus, id lobortis arcu urna tincidunt turpis. <sup><a href="#">1</a></sup> </p>
@@ -136,11 +128,12 @@
     enim. Praesent velit felis, tempus malesuada, sagittis et, condimentum in, ante. Nulla lobortis, ligula sit amet laoreet sollicitudin, sem arcu lacinia tellus, id lobortis arcu urna tincidunt turpis. Proin adipiscing ultrices dui. Duis porttitor,
     libero ut eleifend pellentesque, risus turpis fermentum est, vel nonummy lorem est id nisl. Nulla facilisi. In sagittis tortor. Vestibulum dictum leo vitae augue. Morbi in odio sed nulla luctus sodales.</p>
 </section>
-  <aside role="complementary">
+<section id="aside">
+<aside role="complementary">
     <div class="container">
       <article class="widget">
         <header>
-          <h3>Meet Your Heroes!</h3>
+          <h3>Meeting heroes since 2015!</h3>
         </header>
        
         <p>Quisque justo erat, varius placerat fermentum vel, iaculis vel ligula. Phasellus et elit purus. Curabitur ipsum enim, scelerisque vitae condimentum ac, cursus eget quam. Nullam volutpat dui ut risus pulvinar at fringilla sem tristique. Nulla facilisi.
@@ -207,7 +200,6 @@
   <div class="column">
     <div class="myDIV"><img src="assets/css/img/william.png" alt="William Zabka, Actor"></div>
     <div class="hide">Johnny Lawrence, The Karate Kid Movies, Cobra Kai</div></div>
-        <footer>Widget Footer</footer>
       </article>
       
       
@@ -215,7 +207,7 @@
       <article class="widget">
         
         <header>
-          <h3>Achieve Your Travel Bucketlist!</h3>
+          <h3>Several Stops Along The Way</h3>
         </header>
         
         <p>Quisque justo erat, varius placerat fermentum vel, iaculis vel ligula. Phasellus et elit purus. Curabitur ipsum enim, scelerisque vitae condimentum ac, cursus eget quam. Nullam volutpat dui ut risus pulvinar at fringilla sem tristique. Nulla facilisi.
@@ -267,10 +259,51 @@
     <div class="myDIV"><img src="assets/css/img/Providence 25.png" alt="Providence, Rhode Island 2025"></div>
     <div class="hide">Providence, Rhode Island; 2025</div></div></div>
         
-          <footer>Widget Footer</footer>
       </article>
     </div>
   </aside>
+</section>
+  
+ <section id="content" class="container">
+    <article class="post">
+      <header>
+        <h3>Pop Culture!</h3>
+        <figure>
+                    <img src="assets/css/img/pop.png" alt-text="Pop Culture">
+          <figcaption>Pop Culture Conventions</figcaption>
+        </figure>
+        <h3> <a href="https://fancons.com/events/schedule.php?year=2026&loc=us" target="_blank" rel="popcons" title="popcons">Pop Culture Cons</a></h3>
+      </header>
+      <p>Curabitur facilisis pharetra ultrices. Phasellus eu elementum felis. Etiam cursus mi vitae odio imperdiet, vel fringilla orci porttitor. Cras at tincidunt metus, in lobortis ligula. Fusce metus nisl, efficitur id fringilla quis, luctus non nisi.
+        </p>
+      <footer class="post-meta"><h4>Click the link for upcoming shows!</h4></footer>
+    </article>
+    <article class="post">
+      <header>
+       <h3>Loving that Horror Life?</h3>
+        <figure>
+          <img src="assets/css/img/horror.png" alt="horror">
+          <figcaption>Horror Conventions</figcaption>
+        </figure>
+        <h3> <a href="https://horrorcons.com/calendar/" target="_blank" rel="horror-cons" title="horror cons">Horror Cons</a></h3>
+      </header>
+      <p>Curabitur facilisis pharetra ultrices. Phasellus eu elementum felis. Etiam cursus mi vitae odio imperdiet, vel fringilla orci porttitor. Cras at tincidunt metus, in lobortis ligula. Fusce metus nisl, efficitur id fringilla quis, luctus non nisi.
+        </p>
+      <footer class="post-meta"><h4>Click the link for upcoming shows!</h4></footer>
+    </article>
+    <article class="post">
+      <header>
+       <h3>There's a Con for that, too!</h3>
+        <figure>
+          <img src="assets/css/img/anime.png" alt="animecons">
+          <figcaption>Anime Conventions</figcaption>
+        </figure>
+        <h2> <a href="https://animecons.com/events/schedule.php?year=2026&loc=us" target="_blank" rel="anime" title="anime">Anime Cons</a></h2>
+      </header>
+      <p>Curabitur facilisis pharetra ultrices. Phasellus eu elementum felis. Etiam cursus mi vitae odio imperdiet, vel fringilla orci porttitor. Cras at tincidunt metus, in lobortis ligula. Fusce metus nisl, efficitur id fringilla quis, luctus non nisi.</p>
+      <footer class="post-meta"><h4>Click the link for upcoming shows!</h4></footer>
+    </article>
+  </section>
 <footer id="colophon" role="contentinfo">
     <h6>&copy;2025 Chrissy Jones</h6>
   </footer>
