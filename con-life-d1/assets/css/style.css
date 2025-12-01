@@ -159,6 +159,47 @@ margin-left:150px;
 
 }
 
+.book{
+background-color: #4B8CA6;
+margin:20px;
+border:5px solid #BF4949;
+border-left:10px solid #D98471;
+border-radius:20px 0;
+
+}
+
+.book h2{
+color:#BF4949;
+  margin-bottom:10px;
+background:#D98471;
+border:1px solid #E6C363;
+border-left:10px solid #E6C363;
+border-radius:20px 0;
+box-shadow: 0 0 0 10px #55734D, 0 0 0 15px #BF4949;
+padding:10px 10px 10px 10px;
+font-size: 2rem; transition:0.1
+
+}
+
+.widget2{
+{
+  align-items: center;
+  border: 1px solid #D99D55;
+  border-radius: 30px;
+  margin: auto;
+  padding: 5px 5px;
+  
+}
+
+}
+
+.book{
+        display: grid;
+        place-items: center;
+        height: 100vh;
+    }
+
+
 #content h3 a{
   color:#E6C363;
   margin-bottom:10px;
