@@ -95,8 +95,8 @@ header.primary{
 
     header.primary {
 background-color: #E6C363;
+background-image:url(../img/travel.png);
 padding:20px;
-background-image:url(..img/travel.png);
 background-size: cover;
 background-repeat:no-repeat;
 background-position: center;
