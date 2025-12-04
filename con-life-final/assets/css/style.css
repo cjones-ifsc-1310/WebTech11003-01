@@ -182,13 +182,15 @@ margin-left:150px;
 blockquote{
   font-family: 'Montserrat', sans-serif;
    letter-spacing: 1.4px;
-border-left: 5px solid #55734D;
-border-top: 5px solid #55734D;
+border-left: 5px solid #4B8CA6;
+border-top: 5px solid #4B8CA6;
   border-radius:20px;
-  box-shadow: 10px 10px 10px 10px #55734daa;
+  box-shadow: 10px 10px 10px 5px #4b8ca6;
   padding:10px 10px 10px 10px;
-  font-size: 1.5rem; 
+  font-size: .75rem; 
   font-weight:bold;
+  width:50%;
+  margin:auto;
 
 }
 
@@ -226,13 +228,17 @@ font-size: 2rem; transition:0.1
 #content h3 a{
   color:#E6C363;
   margin-bottom:10px;
+  margin-left:40px;
 background:#D98471;
 border:1px solid #E6C363;
 border-left:10px solid #E6C363;
 border-radius:20px 0;
 padding:10px 10px 10px 10px;
 font-size: 1rem; transition:0.1s;
+align-items: center;
+
 }
+
 
 #content h3 a:hover{
  background-color:#55734D;}
@@ -261,13 +267,20 @@ text-align:center;
  color:#E6C363;
 }
 
+#content .post h3{
+  font-size:1.1rem;
+  color:#E6C363;
+  border:none;
 
+}
 
 
 figure {margin:0}
 
 #content figure{
   position: center;
+  margin-bottom:10px;
+
 
 }
 #content figcaption{
@@ -275,6 +288,7 @@ figure {margin:0}
   font-size:.6rem;
 
 }
+
 
 
 aside .container{
