@@ -1,0 +1,58 @@
+
+
+
+
+body{background-color:rgb(23, 135, 135);
+background-color: #a49ae5;
+
+}
+header.primary{
+background-color: #8a6ab8;
+background-color: #a49ae5;
+background-image: url("data:image/svg+xml,%3Csvg width='20' height='20' viewBox='0 0 20 20' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23e9ca54' fill-opacity='1' fill-rule='evenodd'%3E%3Ccircle cx='3' cy='3' r='3'/%3E%3Ccircle cx='13' cy='13' r='3'/%3E%3C/g%3E%3C/svg%3E");
+text-shadow: 3px 3px #e9ca54;
+color:#8a6ab8;
+text-align:center;
+padding: 20px;
+}
+
+img{
+    max-width:100%;
+}
+
+.container{
+    margin:40px auto;
+    width:70vw;
+    /* Set Max Content Width */
+    max-width:200px;
+    border:3px solid #D98471;
+}
+
+/* Customize Previous/Next/Dots/Autoplay - Default State */
+
+.slick-autoplay-toggle-button,
+.slick-prev .slick-prev-icon, .slick-next .slick-next-icon,
+.slick-dots li button .slick-dot-icon,
+.slick-dots li.slick-active button .slick-dot-icon {
+  color: white;
+}
+
+/* Customize Previous/Next/Dots/Autoplay - Active State */
+
+.slick-next:focus .slick-next-icon,
+.slick-next:focus .slick-prev-icon,
+.slick-prev:focus .slick-next-icon,
+.slick-prev:focus .slick-prev-icon,
+.slick-dots li button:focus .slick-dot-icon:before,
+.slick-dots li.slick-active button:focus .slick-dot-icon,
+.slick-autoplay-toggle-button:focus 
+{
+    color:black;
+}
+
+div.fade.container {
+    outline:#e9ca54 solid 5px;
+    background-color:#4B8CA6;
+    padding:10px;
+    border:6px solid #D98471;
+}
