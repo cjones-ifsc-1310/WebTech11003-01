@@ -234,6 +234,7 @@ text-align:center;
 
 
 
+
 figure {margin:0}
 
 #content figure{
@@ -263,38 +264,9 @@ padding:10px;
 margin:25px;
   color:#D99D55;
   
-}
-
-img {
-  border: 2px dashed #D98471;
-  border-radius: 10px;
-  padding: 1px;
-  width: 100%;
-  height:100%;
-}
-
-.column {
-  float: left;
-  width: 90%;
-  justify-content:center
-}
-
-.row:after {
-  content: "";
-  display: box;
-  clear: both;
-}
 
 
 
-.hide {
-  display: none;
-}
-    
-.myDIV:hover + .hide {
-  display: block;
-  color: #D98471;
-}
 
 .container {
   position: relative;
@@ -309,21 +281,39 @@ text-align:left;
 padding:5px 7.5px 0 5px;
 }
 
-.grid-container {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  gap: none; 
-  justify-items:center;
-  justify-content:center;
+div.fade{
+    margin:40px auto;
+    width:70vw;
+        /* Set Max Content Width */
+    max-height:400px;
+    max-width:225px;
+    border:3px solid #D98471;
+}
+
+/* Customize Previous/Next/Dots/Autoplay - Default State */
+
+.slick-autoplay-toggle-button,
+.slick-prev .slick-prev-icon, .slick-next .slick-next-icon,
+.slick-dots li button .slick-dot-icon,
+.slick-dots li.slick-active button .slick-dot-icon {
+  color: #4B8CA6;
+}
+
+/* Customize Previous/Next/Dots/Autoplay - Active State */
+
+.slick-next:focus .slick-next-icon,
+.slick-next:focus .slick-prev-icon,
+.slick-prev:focus .slick-next-icon,
+.slick-prev:focus .slick-prev-icon,
+.slick-dots li button:focus .slick-dot-icon:before,
+.slick-dots li.slick-active button:focus .slick-dot-icon,
+.slick-autoplay-toggle-button:focus 
+{
+    color:#BF4949;
 }
 
 
-.image {
-  display: block;
-  width: 100%;
- max-height: auto;
-  
-}
+
 
 .accordion-container {
     width: 80%;
@@ -443,7 +433,6 @@ contact-container.container {
 
 
 
-
 #colophon{
 background-color: #BF4949;
 border-radius:5px;
@@ -476,3 +465,6 @@ footer nav a:hover{background-color:#D98471;}
 
 
 
+
+
+}
