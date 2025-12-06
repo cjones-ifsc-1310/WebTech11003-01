@@ -149,13 +149,12 @@ margin-left:150px;
   color:#E6C363;
   border:2px solid #D98471;
   border-radius:15px 3px;
-  margin:5px;
+  margin-top:10px;
+  margin-bottom:10px;
   padding:5px;
   width:fit-content;
 
 }
-
-
 
 
 
@@ -190,7 +189,8 @@ border-top: 5px solid #4B8CA6;
   font-size: .75rem; 
   font-weight:bold;
   width:50%;
-  margin:auto;
+  margin-bottom:10px;
+  margin-left:50px;
 
 }
 
@@ -205,15 +205,14 @@ border-radius:20px 0;
 
 .book h2{
 color:#BF4949;
-  margin-bottom:10px;
 background:#D98471;
 border:1px solid #E6C363;
 border-left:10px solid #E6C363;
 border-radius:20px 0;
 box-shadow: 0 0 0 10px #55734D, 0 0 0 15px #BF4949;
 padding:10px 10px 10px 10px;
-font-size: 2rem; transition:0.1
-
+font-size: 2rem;
+margin-top:10px;
 }
 
 
@@ -317,28 +316,6 @@ img {
   height:100%;
 }
 
-.column {
-  float: left;
-  width: 90%;
-  justify-content:center
-}
-
-.row:after {
-  content: "";
-  display: box;
-  clear: both;
-}
-
-
-
-.hide {
-  display: none;
-}
-    
-.myDIV:hover + .hide {
-  display: block;
-  color: #D98471;
-}
 
 .container {
   position: relative;
@@ -367,6 +344,56 @@ padding:5px 7.5px 0 5px;
   width: 100%;
  max-height: auto;
   
+}
+div.fade img{
+  border:none;
+  max-height: 300px;
+  max-width:200px;
+  }
+div.fade.container{
+    margin:40px auto;
+    width:70vw;
+        /* Set Max Content Width */
+    max-height:300px;
+    max-width:200px;
+    border:3px solid #D98471;
+}
+
+
+/* Customize Previous/Next/Dots/Autoplay - Default State */
+
+.slick-autoplay-toggle-button,
+.slick-prev .slick-prev-icon, .slick-next .slick-next-icon,
+.slick-dots li button .slick-dot-icon,
+.slick-dots li.slick-active button .slick-dot-icon {
+  color: #E6C363;
+}
+
+/* Customize Previous/Next/Dots/Autoplay - Active State */
+
+.slick-next:focus .slick-next-icon,
+.slick-next:focus .slick-prev-icon,
+.slick-prev:focus .slick-next-icon,
+.slick-prev:focus .slick-prev-icon,
+.slick-dots li button:focus .slick-dot-icon:before,
+.slick-dots li.slick-active button:focus .slick-dot-icon,
+.slick-autoplay-toggle-button:focus 
+{
+    color: #BF4949;
+}
+
+div.fade.container {
+    outline:#e9ca54 solid 5px;
+    background-color:#4B8CA6;
+    padding:10px;
+    border:6px solid #D98471;
+    
+}
+
+div.fade.container{
+    display:flex;
+    justify-content:center;
+    align-items:center;
 }
 
 .accordion-container {
@@ -446,6 +473,8 @@ div.accordion h3 {
   margin-left:200px;
 }
 
+
+
 .table_component {
     overflow: auto;
     width: 90%;
@@ -482,14 +511,6 @@ div.accordion h3 {
     color: #BF4949;
     padding: 5px;
 }
-
-
-
-.tenor-gif-embed{
-  margin:auto;
-display:flex;
-  justify-content: center;}
-
 
 #aside h2{
   text-align: center;
