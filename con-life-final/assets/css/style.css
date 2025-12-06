@@ -157,27 +157,6 @@ margin-left:150px;
 }
 
 
-
-.maps h3{
-  text-align: center;
-  font-size: 1.5rem;
-  background-color:#4B8CA6;
-  color:#E6C363;
-  border:3px solid #55734D;
-  border-radius:30px 5px;
-  width:60%; 
-margin-left:150px;
-}
-.maps{
-  background-color: #D98471;
-  border-left:5px dashed#55734D;
-  border-right:5px solid #55734D;
-  border-top:5px dashed #BF4949;
-  border-radius:30px 5px;
-  box-shadow: 0 16px 28px #BF4949;
-
-}
-
 blockquote{
   font-family: 'Montserrat', sans-serif;
    letter-spacing: 1.4px;
@@ -188,7 +167,7 @@ border-top: 5px solid #4B8CA6;
   padding:10px 10px 10px 10px;
   font-size: .75rem; 
   font-weight:bold;
-  width:50%;
+  width:fit-content;
   margin-bottom:10px;
   margin-left:50px;
 
@@ -220,7 +199,7 @@ margin-top:10px;
 .book{
         display: grid;
         place-items: center;
-        height: 100vh;
+        height: 75vh;
     }
 
 
@@ -396,71 +375,75 @@ div.fade.container{
     align-items:center;
 }
 
-.accordion-container {
-    width: 80%;
-    margin: 25px auto;
-    background-color: #4B8CA6;
-    border-left:3px dashed #BF4949;
-border-right:10px solid #D98471;
-border-radius:20px 0;
-box-shadow: 0 16px 28px #BF4949;
-padding:10px 10px 10px 10px;
-font-size: 1rem;
-text-align:center;
-align-items:center;
+
+
+.tab-bar {
+  display: flex; /* Use flexbox for easy button arrangement */
+  
+  background-color: #E6C363;
+}
+
+.tab-button {
+  background-color:#4B8CA6;
+  border-top: 5px solid #55734D;
+  border-bottom:none;
+  border-right:none;
+  border-radius: 0 30px 0px 30px;
+  
+  color: #E6C363;
+  
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s; /* Smooth transition for hover effects */
+  font-size: 16px;
+}
+
+.tab-button:hover {
+  background-color: #E6C363;
+  color:#4B8CA6;
+}
+
+.tab-button.active {
+  background-color: #D98471;
+  border-bottom: 5px inset #55734D; /* Highlight active tab */
+}
+
+.tab-content {
+  font-size: 18px;
+  margin-left:5px;
+  margin-right:5px;
+  padding: 20px;
+  border: 5px solid #4B8CA6;
+  border-radius: 30px 30px 0 30px;
+  box-shadow: 0 16px 28px #4B8CA6;
+  border-top: none; /* Connects visually with the tab bar */
+}
+
+.tab-content h3{
+  display:grid;
+  justify-content: center;
+  text-align: center;
+  font-size: 1.5rem;
+  background-color:#4B8CA6;
+  color:#E6C363;
+  border:5px solid #D98471;
+  border-radius:0 30px;
+  width:50%; 
+  margin:auto;
+}
+
+div.definitions-header h3{
+  text-align: center;
+  font-size: 1.5rem;
+  background-color:#BF4949;
+  color:#E6C363;
+  border:5px ridge #D98471;
+  border-radius:0 30px;
+  width:fit-content;
+  margin-left:225px;
 }
 
 
-
-.accordion-item:last-child {
-    border-bottom: none;
-}
-
-.accordion-header {
-    display: block;
-    border:3px dashed #BF4949;
-border-right:3px dashed #D98471;
-border-bottom: 3px dashed #D98471;
-border-radius:20px 0;
-padding:10px 10px 10px 10px;
-font-size: 1rem;
-text-align:center;
-       background-color: #E6C363;
-    cursor: pointer;
-    font-weight: bold;
-    color: #55734D;
-    transition: background-color 0.3s ease-out;
-    
-}
-
-.accordion-header:hover {
-    background-color: #e6c363ce;
-}
-
-.accordion-content {
-      padding: 0 20px;
-    color:#E6C363;
-    background-color: #4B8CA6;
-    max-height: 0;
-    overflow-y: auto;
-    transition: max-height 0.3s ease-out;
-}
-
-.accordion-toggle:checked + .accordion-header + .accordion-content {
-    max-height: 1000px; 
-    padding: 15px 20px;
-}
-
-.accordion-header::after {
-    content: '+';
-    float: center;
-    transition: transform 0.3s ease;
-}
-
-.accordion-toggle:checked + .accordion-header::after {
-    content: '-';
-    transform: rotate(90deg); 
-}
 
 div.accordion h3 {
   text-align: center;
@@ -470,47 +453,9 @@ div.accordion h3 {
   border:5px solid #D98471;
   border-radius:0 30px;
   width:50%; 
-  margin-left:200px;
 }
 
 
-
-.table_component {
-    overflow: auto;
-    width: 90%;
-    margin-left:61px;
-    
-}
-
-.table_component table {
-    border: 1px none #BF4949;
-    height: 100%;
-    width: 75%;
-    table-layout: fixed;
-    border-collapse: collapse;
-    border-spacing: 1px;
-    text-align: left;
-    margin:20px;
-}
-
-.table_component caption {
-    caption-side: top;
-    text-align: left;
-}
-
-.table_component th {
-    border: 1px none #BF4949;
-    background-color: #55734D;
-    color: #E6C363;
-    padding: 5px;
-}
-
-.table_component td {
-    border: 1px none #BF4949;
-    background-color: #E6C363;
-    color: #BF4949;
-    padding: 5px;
-}
 
 #aside h2{
   text-align: center;
@@ -549,16 +494,34 @@ contact-container.container {
   padding: 10px;
 }
 
+div.tenor-gif-embed{
+  display:flex;
+  justify-content:center;
+  margin:auto;
+  padding:10px;
+}
 
-div.accordion-header-inside h3{  
+div.warning-text p{
+  font-size:1.2rem;
+  font-weight:bold;
+  text-align:center;
+  padding:10px;
+  border:#BF4949 solid 5px;
+  border-radius:15px;
+  margin-left:15%;
+margin-right:15%;
+margin-top:10px;
+margin-bottom:10px;}
+
+div.definitions-header-inside h3{  
   text-align: center;
   font-size: 1.5rem;
   background-color:#BF4949;
   color:#E6C363;
   border:5px ridge #D98471;
   border-radius:0 30px;
-  width:50%;
-  margin-left:200px;
+  width:75%;
+  margin-left:100px;
 }
  .warning{
   background-color: #D98471;
