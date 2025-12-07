@@ -38,3 +38,4 @@ document.addEventListener('DOMContentLoaded', (event) => {
     document.querySelector('.tab-button').click();
 });
 
+

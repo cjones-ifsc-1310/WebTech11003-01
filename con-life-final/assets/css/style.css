@@ -190,19 +190,18 @@ border-top: 5px solid #4B8CA6;
 background-color: #4B8CA6;
 margin:20px;
 border:5px solid #BF4949;
-border-left:10px solid #D98471;
 border-radius:20px 0;
 
 }
 
 .book h2{
+  text-align:center;
 color:#BF4949;
-background:#D98471;
+background:#E6C363;
 border:1px solid #E6C363;
-border-left:10px solid #E6C363;
 border-radius:20px 0;
-box-shadow: 0 0 0 10px #55734D, 0 0 0 15px #BF4949;
-padding:10px 10px 10px 10px;
+box-shadow: 0 0 0 10px #D98471;
+padding:5px 5px 5px 5px;
 font-size: 2rem;
 margin-top:10px;
 }
@@ -212,7 +211,8 @@ margin-top:10px;
 .book{
         display: grid;
         place-items: center;
-        height: 75vh;
+        height: 70vh;
+        background:#55734D;
     }
 
 
@@ -377,7 +377,7 @@ justify-items:center;
 }
 
 
-.image {
+.img {
   display: block;
   width: 100%;
  max-height: auto;
@@ -522,31 +522,93 @@ div.accordion h3 {
   background-color:#4B8CA6;
   color:#E6C363;
   border:3px solid #D98471;
-  border-radius:30px 5px;
+  border-radius:30px 5px; 
   width:60%; 
 margin-left:175px;
 }
 
+.grid-container-2 figcaption{
+  text-align:center;
+  font-size:1.2rem;
+  font-weight: bold;
+}
+
+
 .grid-container-2{
   display:grid;
-  grid-template-columns:100%;
-gap:10px;
+  grid-template-rows: 100% 100%;
+  grid-template-columns: 33.3% 33.3% 33.3%;
+  justify-content: center;
+  gap:10px;
 margin:10px;
 padding: 10px;
 }
 
+.grid-container-two 
+{display:grid;
+  grid-template-rows: 25% 100%;
+  text-align: center;
+  position: center;
+  width:100%;
+
+}
+
+
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+
+
+
 .widget2 h3{
    text-align: center;
   font-size: 1.5rem;
-  
-  color:#E6C363;
+    color:#E6C363;
   border-left:5px solid #D98471;
   border-right:5px solid #D98471;
   border-radius:8px;
 
 }
 
+.outro-container{
+   display:grid;
+   justify-content: center;
+   color:#55734D;
+   font-size:1.2rem;
+   font-weight: bold;
 
+  
+}
+
+.outro-container img{
+  max-height:300px;
+  max-width:200px;
+  border-left: 5px solid #BF4949;
+  border-radius:15px 0;
+ margin-left:200px;
+}
+
+.outro-container figcaption{
+  text-align: center;
+  color:#BF4949;
+  font-size:1.2rem;
+  font-weight:bold;
+
+}
+
+.outro-container h2{
+  text-align:center;
+  font-size: 1.5rem;
+  background-color:#4B8CA6;
+  color:#E6C363;
+  border:3px solid #D98471;
+  border-radius:30px 5px;
+  width:75%; 
+margin-left:75px;
+}
 contact-container.container {
   flex: 0 1 700px;
   margin: auto;
@@ -582,6 +644,17 @@ div.definitions-header-inside h3{
   width:75%;
   margin-left:100px;
 }
+
+
+
+
+
+
+
+
+
+
+
 
 
 #colophon{
