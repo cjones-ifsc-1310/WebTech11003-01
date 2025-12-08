@@ -297,7 +297,13 @@ text-align: center;
 margin-left:75px;
 
 }
+.widget h3{
+  margin-left:50px;
+} 
 
+.sup{
+  font-size:smaller;
+}
         .widget-3{
   border-left:10px solid #D98471;
 border-radius:15px 0;
@@ -342,6 +348,11 @@ img {
   height:100%;
 }
 
+.disclaimer {
+  font-size:small;
+  margin-top:20px;
+  text-align:center;
+}
 
 .container {
   position: relative;
@@ -503,18 +514,49 @@ div.definitions-header h3{
 }
 
 
+.accordion-container{
+  outline:#55734D solid 5px;
+    background-color:#4B8CA6;
+    padding:10px;
+    border:6px solid #D98471;
+    color:#E6C363
 
-div.accordion h3 {
+}
+.accordion-container{
+  width:400px;
+margin-left:200px;
+
+}
+
+.accordion-aside {
   text-align: center;
-  font-size: 1.5rem;
+font-size:small;
+
+}
+
+.accordion-header h4 {
+  text-align: center;
   background-color:#4B8CA6;
   color:#E6C363;
   border:5px solid #D98471;
   border-radius:0 30px;
-  width:50%; 
+  width:300px; 
+  margin-top:10px;
+  padding:10px;
+  margin-left:35px;
 }
 
 
+.accordion-content {
+ margin-left:50px;
+ margin-right:50px;
+ margin-top:10px;
+  transition: max-height 0.3s ease-out; /* Smooth transition for expansion/collapse */
+}
+
+.accordion-header.active + .accordion-content {
+  max-height: 200px; /* Adjust as needed to reveal content */
+}
 
 #aside h2{
   text-align: center;
@@ -546,14 +588,43 @@ padding: 10px;
 
 .grid-container-two 
 {display:grid;
-  grid-template-rows: 25% 100%;
+  grid-template-rows: 25% 50%;
   text-align: center;
   position: center;
   width:100%;
 
 }
 
+.prepare-container{
+text-align:left;
+margin-left:300px;
+}
 
+.prepare-container h2{
+  text-align: center;
+  font-size: 1.5rem;
+  background-color:#4B8CA6;
+  color:#E6C363;
+  border:3px solid #D98471;
+  border-radius:30px 5px;
+  width:60%;
+  margin-right: 20px;
+}
+
+.prepare-container h3{
+color:#E6C363;
+  margin-bottom:10px;
+  background:#D98471;
+border:1px solid #55734D;
+border-left:10px solid #55734D;
+border-radius:20px 0;
+padding:10px 10px 10px 10px;
+font-size: 1rem; transition:0.1s;
+text-align: center;
+width:50%;
+ 
+
+}
 .image {
   display: block;
   width: 100%;
@@ -645,9 +716,21 @@ div.definitions-header-inside h3{
   margin-left:100px;
 }
 
+h4{text-align:center;}
 
+ol {
+  list-style-type: upper-roman; /* I, II, III, IV, etc. */
+}
+ol {
+  margin-left: 250px; /* Adjust the left margin of the list */
+  margin-right:200px;
+  padding-left: 0;   /* Remove default padding for better control */
+  list-style-position: outside; /* Puts numbers inside the list item's content flow */
+}
 
-
+ol li {
+  margin-bottom: 10px; /* Add vertical space between items */
+}
 
 
 

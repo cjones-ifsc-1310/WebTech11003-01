@@ -38,4 +38,20 @@ document.addEventListener('DOMContentLoaded', (event) => {
     document.querySelector('.tab-button').click();
 });
 
+const accordionHeaders = document.querySelectorAll('.accordion-header');
 
+accordionHeaders.forEach(header => {
+  header.addEventListener('click', () => {
+    const content = document.getElementById(header.getAttribute('aria-controls'));
+
+    if (content.hidden) {
+      content.hidden = false;
+      header.setAttribute('aria-expanded', 'true');
+      header.classList.add('active');
+    } else {
+      content.hidden = true;
+      header.setAttribute('aria-expanded', 'false');
+      header.classList.remove('active');
+    }
+  });
+});
