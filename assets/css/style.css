@@ -119,9 +119,16 @@ header.primary nav a:hover{background-color:#4b2361d2;}
   text-decoration: none;
 }
 
-#practice h2 {
+.container {color:#235E61;
+font-size:18px;
+font-weight:bold;}
+
+
+h2 {
 color:#4b2361; border-bottom:1px dotted #267c81; 
 }
+
+h3{color:#4b2361;}
 
 blockquote{
   border: 4px double #A27EB6;
@@ -144,7 +151,7 @@ blockquote cite{
   color:#235E61;
   display:block;
   text-align:center;
-  margin-top:20px;
+  margin-top:10px;
   margin-left:400px;
   border:5px solid #4b2361;
   border-radius:30px;
@@ -152,6 +159,20 @@ blockquote cite{
   
 }
 
+.progressive{
+  border:3px solid #235E61;
+  border-radius:25px;
+  padding:20px;
+margin:20px;
+
+}
+
+.reflection{
+  border:3px solid #4b2361;
+  border-radius:25px;
+  padding:20px;
+  margin:20px;
+}
 
 #colophon{
 
