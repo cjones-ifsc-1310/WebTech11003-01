@@ -213,7 +213,7 @@ margin-top:10px;
 .book{
         display: grid;
         place-items: center;
-        height: 70vh;
+        height: 100vh;
         background:#55734D;
     }
 
@@ -279,6 +279,13 @@ figure {margin:0}
 #content figcaption{
   text-transform:uppercase;
   font-size:.6rem;
+
+}
+
+aside-book .container{
+  display:grid;
+grid-template-columns:100%;
+justify-items:center;
 
 }
 
